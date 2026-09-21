@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getEvents } from "@/lib/reader";
+import keynotePhoto from "@/public/photos/slc-keynote.jpg";
+import electionsPhoto from "@/public/photos/slc-elections.jpg";
 
 export const metadata: Metadata = { title: "State Events" };
 
@@ -31,6 +34,34 @@ export default async function Events() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="section photo-section">
+        <div className="container">
+          <span className="kicker">On stage</span>
+          <div className="photo-grid">
+            <div className="photo-cell">
+              <Image
+                src={keynotePhoto}
+                alt="Keynote speaker on stage at the Rhode Island State Leadership Conference"
+                placeholder="blur"
+                sizes="(max-width: 760px) 100vw, 60vw"
+              />
+            </div>
+            <div className="photo-cell">
+              <Image
+                src={electionsPhoto}
+                alt="A candidate speaking during state officer elections at the State Leadership Conference"
+                placeholder="blur"
+                sizes="(max-width: 760px) 100vw, 40vw"
+              />
+            </div>
+          </div>
+          <p className="photo-caption">
+            Keynote and state officer elections, 2026 State Leadership
+            Conference · Photos: GEC.Shots
+          </p>
         </div>
       </section>
 

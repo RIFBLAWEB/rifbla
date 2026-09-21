@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import state from "@/content/state.json";
 import Anchor from "@/components/Anchor";
-import slcPhoto from "@/public/photos/d91a0061.jpg";
+import slcPhoto from "@/public/photos/slc-awards.jpg";
 import { getEvents, getChapters } from "@/lib/reader";
 
 export default async function Home() {
@@ -56,14 +56,14 @@ export default async function Home() {
             <div className="photo-cell">
               <Image
                 src={slcPhoto}
-                alt="Rhode Island FBLA members at the State Leadership Conference"
+                alt="Members shaking hands on stage during the awards session at the Rhode Island State Leadership Conference"
                 placeholder="blur"
                 sizes="(max-width: 760px) 100vw, 100vw"
               />
             </div>
           </div>
           <p className="photo-caption">
-            The 2026 State Leadership Conference
+            Awards session, 2026 State Leadership Conference
           </p>
         </div>
       </section>
