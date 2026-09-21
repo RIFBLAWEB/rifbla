@@ -8,6 +8,7 @@ export default async function Events() {
   return (
     <>
       <div className="page-head">
+        <span className="head-wm" aria-hidden="true">Mar 12</span>
         <div className="container">
           <h1>State Events</h1>
           <p>
@@ -21,14 +22,12 @@ export default async function Events() {
         <div className="container">
           <span className="kicker">2026-2027</span>
           <h2>This year&apos;s calendar</h2>
-          <ul className="event-list">
+          <ul className="timeline">
             {events.map((event) => (
               <li key={event.title}>
-                <span className="event-date">{event.date}</span>
-                <div>
-                  <p className="event-title">{event.title}</p>
-                  <p className="event-detail">{event.detail}</p>
-                </div>
+                <span className="timeline-date">{event.date}</span>
+                <p className="timeline-title">{event.title}</p>
+                <p className="event-detail">{event.detail}</p>
               </li>
             ))}
           </ul>

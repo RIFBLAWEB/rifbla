@@ -6,6 +6,7 @@ export default function About() {
   return (
     <>
       <div className="page-head">
+        <span className="head-wm" aria-hidden="true">Est 1940</span>
         <div className="container">
           <h1>About FBLA</h1>
           <p>
@@ -28,24 +29,27 @@ export default function About() {
               business leaders in a global society.
             </p>
             <p>The association has four divisions:</p>
-            <ul>
-              <li>
-                <strong>FBLA</strong> for high school students
-              </li>
-              <li>
-                <strong>FBLA-Middle Level</strong> for junior high, middle, and
-                intermediate school students
-              </li>
-              <li>
-                <strong>Phi Beta Lambda (PBL)</strong> for postsecondary
-                students
-              </li>
-              <li>
-                <strong>Professional Division</strong> for businesspeople,
-                alumni, educators, and parents who support the goals of the
+          </div>
+          <div className="division-grid">
+            <div className="division">
+              <h3>FBLA</h3>
+              <p>High school students</p>
+            </div>
+            <div className="division">
+              <h3>FBLA-Middle Level</h3>
+              <p>Junior high, middle, and intermediate school students</p>
+            </div>
+            <div className="division">
+              <h3>Phi Beta Lambda</h3>
+              <p>Postsecondary students</p>
+            </div>
+            <div className="division">
+              <h3>Professional</h3>
+              <p>
+                Businesspeople, alumni, educators, and parents who support the
                 association
-              </li>
-            </ul>
+              </p>
+            </div>
           </div>
         </div>
       </section>

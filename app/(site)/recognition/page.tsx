@@ -7,6 +7,7 @@ export default function Recognition() {
   return (
     <>
       <div className="page-head">
+        <span className="head-wm" aria-hidden="true">No. 1</span>
         <div className="container">
           <h1>Recognition</h1>
           <p>
@@ -60,10 +61,11 @@ export default function Recognition() {
           <h3 style={{ marginTop: "2rem" }}>
             {state.championChapter.recognized.title}
           </h3>
-          <ul className="highlights">
+          <ul className="podium">
             {state.championChapter.recognized.rankings.map((r, i) => (
               <li key={r}>
-                {i + 1}) {r}
+                <span className="place">{i + 1}</span>
+                <span>{r}</span>
               </li>
             ))}
           </ul>

@@ -7,6 +7,7 @@ export default function Resources() {
   return (
     <>
       <div className="page-head">
+        <span className="head-wm" aria-hidden="true">Prep</span>
         <div className="container">
           <h1>Resources</h1>
           <p>

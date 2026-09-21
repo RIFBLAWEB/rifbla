@@ -9,6 +9,7 @@ export default async function Chapters() {
   return (
     <>
       <div className="page-head">
+        <span className="head-wm" aria-hidden="true">14</span>
         <div className="container">
           <h1>Chapter Directory</h1>
           <p>
@@ -22,11 +23,17 @@ export default async function Chapters() {
         <div className="container">
           <span className="kicker">Across the state</span>
           <h2>Our chapters</h2>
-          <ul className="chapter-list">
+          <ul className="roster">
             {chapters.map((c) => (
               <li key={c.name}>
-                {c.site ? <a href={c.site}>{c.name}</a> : c.name}
-                {c.note && <span className="chapter-note"> ({c.note})</span>}
+                {c.site ? (
+                  <a href={c.site} className="roster-name">
+                    {c.name}
+                  </a>
+                ) : (
+                  <span className="roster-name">{c.name}</span>
+                )}
+                {c.note && <span className="chapter-note">({c.note})</span>}
               </li>
             ))}
           </ul>
