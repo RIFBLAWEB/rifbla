@@ -1,0 +1,83 @@
+# Pages CMS configuration (https://pagescms.org)
+# Editors: go to https://app.pagescms.org, sign in with GitHub, open this
+# repo, and edit Events, Officers, and Chapters with simple forms.
+# Every save commits to the repo and the site redeploys automatically.
+
+media:
+  input: public/photos
+  output: /photos
+
+content:
+  - name: events
+    label: State Events
+    type: collection
+    path: content/events
+    format: json
+    view:
+      fields: [title, date]
+    fields:
+      - name: title
+        label: Event title
+        type: string
+        required: true
+      - name: date
+        label: Date (as shown on the site, e.g. October 30, 2026)
+        type: string
+        required: true
+      - name: detail
+        label: Description
+        type: text
+      - name: order
+        label: Display order (1 = first)
+        type: number
+
+  - name: officers
+    label: State Officers
+    type: collection
+    path: content/officers
+    format: json
+    view:
+      fields: [name, role, school]
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: role
+        label: Role
+        type: string
+        required: true
+      - name: school
+        label: School
+        type: string
+      - name: photo
+        label: Photo
+        type: image
+      - name: bio
+        label: Bio
+        type: text
+      - name: order
+        label: Display order (1 = first)
+        type: number
+
+  - name: chapters
+    label: Chapter Directory
+    type: collection
+    path: content/chapters
+    format: json
+    view:
+      fields: [name]
+    fields:
+      - name: name
+        label: School name
+        type: string
+        required: true
+      - name: note
+        label: Note (optional, e.g. HS & MS)
+        type: string
+      - name: site
+        label: Chapter website URL (optional)
+        type: string
+      - name: order
+        label: Display order (alphabetical position)
+        type: number
