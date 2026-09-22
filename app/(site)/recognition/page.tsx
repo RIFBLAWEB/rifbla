@@ -38,6 +38,18 @@ export default function Recognition() {
               to see this month&apos;s honoree.
             </p>
           </div>
+          <div className="motm-grid">
+            {[1, 2, 3, 4, 5].map((n) => (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img
+                key={n}
+                src={`/photos/motm-${n}.jpg`}
+                alt={`Past Member of the Month feature ${n}`}
+                loading="lazy"
+              />
+            ))}
+          </div>
+          <p className="photo-caption">Past Members of the Month</p>
         </div>
       </section>
 

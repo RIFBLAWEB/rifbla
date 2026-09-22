@@ -10,6 +10,7 @@ const nav = [
   { href: "/events", label: "Events" },
   { href: "/resources", label: "Resources" },
   { href: "/recognition", label: "Recognition" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
@@ -82,7 +83,9 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
           <p>
             FBLA membership is open to all full-time secondary and
             post-secondary students regardless of race, creed, color, gender,
-            sexual orientation, national origin, or disability.
+            sexual orientation, national origin, or disability. ·{" "}
+            <Link href="/privacy">Privacy</Link> ·{" "}
+            <Link href="/contact">Contact</Link>
           </p>
         </div>
       </footer>
