@@ -143,6 +143,11 @@ export default async function Home() {
                 <div>
                   <p className="event-title">{event.title}</p>
                   <p className="event-detail">{event.detail}</p>
+                  {event.link && (
+                    <p className="event-detail">
+                      <a href={event.link}>{event.linkLabel || "Learn more"} →</a>
+                    </p>
+                  )}
                 </div>
               </li>
             ))}

@@ -27,6 +27,12 @@ content:
       - name: detail
         label: Description
         type: text
+      - name: link
+        label: Link URL (optional, e.g. registration or donation page)
+        type: string
+      - name: linkLabel
+        label: Link text (optional, e.g. "Register here")
+        type: string
       - name: order
         label: Display order (1 = first)
         type: number

@@ -32,6 +32,11 @@ export default async function Events() {
                 <span className="timeline-date">{event.date}</span>
                 <p className="timeline-title">{event.title}</p>
                 <p className="event-detail">{event.detail}</p>
+                {event.link && (
+                  <p className="event-detail">
+                    <a href={event.link}>{event.linkLabel || "Learn more"} →</a>
+                  </p>
+                )}
               </li>
             ))}
           </ul>

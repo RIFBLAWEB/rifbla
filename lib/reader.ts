@@ -31,6 +31,8 @@ export type StateEvent = {
   title: string;
   date: string;
   detail: string;
+  link?: string;
+  linkLabel?: string;
   order?: number;
 };
 
