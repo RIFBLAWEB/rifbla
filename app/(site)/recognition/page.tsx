@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import state from "@/content/state.json";
+import championPhoto from "@/public/photos/nlc-champion.jpg";
 
 export const metadata: Metadata = { title: "Recognition" };
 
@@ -69,6 +71,17 @@ export default function Recognition() {
               </li>
             ))}
           </ul>
+          <div className="about-photo">
+            <Image
+              src={championPhoto}
+              alt="Members holding the FBLA Silver Champion Chapter banner and plaque"
+              placeholder="blur"
+              sizes="(max-width: 760px) 100vw, 736px"
+            />
+          </div>
+          <p className="photo-caption">
+            Silver Champion Chapter honors, 2025-2026
+          </p>
         </div>
       </section>
 

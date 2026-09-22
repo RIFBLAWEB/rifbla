@@ -1,9 +1,59 @@
 import Link from "next/link";
-import Image from "next/image";
 import state from "@/content/state.json";
 import Anchor from "@/components/Anchor";
-import slcPhoto from "@/public/photos/slc-awards.jpg";
+import Slideshow from "@/components/Slideshow";
+import slcAwards from "@/public/photos/slc-awards.jpg";
+import nlcDelegation from "@/public/photos/nlc-delegation.jpg";
+import nlcChampion from "@/public/photos/nlc-champion.jpg";
+import nlcAwards from "@/public/photos/nlc-awards.jpg";
+import nlcSession from "@/public/photos/nlc-session.jpg";
+import nlcHats from "@/public/photos/nlc-hats.jpg";
+import nlcBannerGroup from "@/public/photos/nlc-banner-group.jpg";
+import nlcSteps from "@/public/photos/nlc-steps.jpg";
 import { getEvents, getChapters } from "@/lib/reader";
+
+const slides = [
+  {
+    image: nlcDelegation,
+    alt: "The full Rhode Island delegation under the National Leadership Conference welcome banner",
+    caption: "The Rhode Island delegation at the National Leadership Conference",
+  },
+  {
+    image: slcAwards,
+    alt: "Members shaking hands on stage during the awards session at the State Leadership Conference",
+    caption: "Awards session, 2026 State Leadership Conference",
+  },
+  {
+    image: nlcChampion,
+    alt: "Members holding the FBLA Silver Champion Chapter banner",
+    caption: "Silver Champion Chapter honors at nationals",
+  },
+  {
+    image: nlcAwards,
+    alt: "Rhode Island members at the FBLA awards backdrop at nationals",
+    caption: "Awards night at the National Leadership Conference",
+  },
+  {
+    image: nlcSession,
+    alt: "Rhode Island members gathered at a National Leadership Conference session",
+    caption: "RI members at an NLC general session",
+  },
+  {
+    image: nlcHats,
+    alt: "Members in suits and cowboy hats outside the National Leadership Conference venue",
+    caption: "Suits and cowboy hats at nationals",
+  },
+  {
+    image: nlcBannerGroup,
+    alt: "Members with an FBLA banner between conference sessions",
+    caption: "Between sessions at the National Leadership Conference",
+  },
+  {
+    image: nlcSteps,
+    alt: "Members and an adviser on the steps outside the conference venue",
+    caption: "On the road at nationals",
+  },
+];
 
 export default async function Home() {
   const events = await getEvents();
@@ -51,20 +101,8 @@ export default async function Home() {
 
       <section className="section photo-section">
         <div className="container">
-          <span className="kicker">State Leadership Conference</span>
-          <div className="photo-grid photo-grid-single">
-            <div className="photo-cell">
-              <Image
-                src={slcPhoto}
-                alt="Members shaking hands on stage during the awards session at the Rhode Island State Leadership Conference"
-                placeholder="blur"
-                sizes="(max-width: 760px) 100vw, 100vw"
-              />
-            </div>
-          </div>
-          <p className="photo-caption">
-            Awards session, 2026 State Leadership Conference
-          </p>
+          <span className="kicker">Rhode Island FBLA, in photos</span>
+          <Slideshow slides={slides} />
         </div>
       </section>
 

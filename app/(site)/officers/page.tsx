@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import officers from "@/content/officers.json";
 import state from "@/content/state.json";
+import advisersPhoto from "@/public/photos/nlc-advisers.jpg";
 import { getOfficers } from "@/lib/reader";
 
 export const metadata: Metadata = { title: "State Officers" };
@@ -72,6 +74,17 @@ export default async function Officers() {
               </li>
             ))}
           </ul>
+          <div className="about-photo">
+            <Image
+              src={advisersPhoto}
+              alt="Rhode Island FBLA advisers outside the National Leadership Conference venue"
+              placeholder="blur"
+              sizes="(max-width: 760px) 100vw, 736px"
+            />
+          </div>
+          <p className="photo-caption">
+            Rhode Island advisers at the National Leadership Conference
+          </p>
         </div>
       </section>
 

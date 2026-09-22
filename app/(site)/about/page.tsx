@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import hatsPhoto from "@/public/photos/nlc-hats.jpg";
 
 export const metadata: Metadata = { title: "About FBLA" };
 
@@ -92,6 +94,17 @@ export default function About() {
               sessions.
             </p>
           </div>
+          <div className="about-photo">
+            <Image
+              src={hatsPhoto}
+              alt="Rhode Island members in suits and cowboy hats outside the National Leadership Conference venue"
+              placeholder="blur"
+              sizes="(max-width: 760px) 100vw, 736px"
+            />
+          </div>
+          <p className="photo-caption">
+            Rhode Island members at the National Leadership Conference
+          </p>
         </div>
       </section>
     </>

@@ -1317,3 +1317,68 @@ a.roster-name:hover {
     display: none;
   }
 }
+
+/* ---------- slideshow ---------- */
+
+.slideshow-frame {
+  position: relative;
+  height: 30rem;
+  border-bottom: 4px solid var(--gold);
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide-active {
+  opacity: 1;
+}
+
+.slideshow-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.slideshow-bar .photo-caption {
+  margin: 0.85rem 0 0;
+}
+
+.slideshow-dots {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+
+.dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: var(--line);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dot:hover {
+  background: var(--gray);
+}
+
+.dot-active {
+  background: var(--gold);
+  transform: scale(1.25);
+}
+
+@media (max-width: 760px) {
+  .slideshow-frame {
+    height: 17rem;
+  }
+}

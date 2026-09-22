@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getEvents } from "@/lib/reader";
 import keynotePhoto from "@/public/photos/slc-keynote.jpg";
 import electionsPhoto from "@/public/photos/slc-elections.jpg";
+import delegationPhoto from "@/public/photos/nlc-delegation.jpg";
 
 export const metadata: Metadata = { title: "State Events" };
 
@@ -78,6 +79,17 @@ export default async function Events() {
               compete, share their successes, and shape their career futures.
             </p>
           </div>
+          <div className="about-photo">
+            <Image
+              src={delegationPhoto}
+              alt="The full Rhode Island delegation under the National Leadership Conference welcome banner"
+              placeholder="blur"
+              sizes="(max-width: 760px) 100vw, 736px"
+            />
+          </div>
+          <p className="photo-caption">
+            The Rhode Island delegation at the National Leadership Conference
+          </p>
         </div>
       </section>
     </>
