@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     description:
       "The official website of Rhode Island FBLA. State conferences, competitive events, chapters, and how to get involved.",
   },
+  verification: {
+    google: "ZvycjCCmGFVFg3UN_G5txGWaLiHdWBVJEkbonsB0zfM",
+  },
 };
 
 const orgJsonLd = {
