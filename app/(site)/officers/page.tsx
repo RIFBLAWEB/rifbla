@@ -62,7 +62,7 @@ export default async function Officers() {
       <section className="section section-wash">
         <div className="container">
           <span className="kicker">State leadership</span>
-          <h2>Advisor &amp; chair</h2>
+          <h2>Adviser &amp; chair</h2>
           <ul className="officer-list">
             {state.leadership.map((l) => (
               <li key={l.name}>

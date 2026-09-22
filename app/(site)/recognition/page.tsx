@@ -28,7 +28,7 @@ export default function Recognition() {
               Each month the RI FBLA executive board chooses one exemplary
               member from across the state to be recognized on our social
               platforms. You must be a current FBLA member to qualify, and you
-              can be nominated by a fellow member, an advisor, or yourself.
+              can be nominated by a fellow member, an adviser, or yourself.
             </p>
             <p>
               Follow{" "}
