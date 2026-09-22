@@ -27,8 +27,8 @@ export default function Recognition() {
             <p>
               Each month the RI FBLA executive board chooses one exemplary
               member from across the state to be recognized on our social
-              platforms. You must be a current FBLA member to qualify, and you
-              can be nominated by a fellow member, an adviser, or yourself.
+              platforms. Nominations are submitted by chapter ambassadors, and
+              you must be a current FBLA member to qualify.
             </p>
             <p>
               Follow{" "}
@@ -50,6 +50,22 @@ export default function Recognition() {
             ))}
           </div>
           <p className="photo-caption">Past Members of the Month</p>
+        </div>
+      </section>
+
+      <section className="section section-wash">
+        <div className="container">
+          <span className="kicker">New this year</span>
+          <h2>Chapter of the Month</h2>
+          <div className="prose">
+            <p>
+              New for the 2026-2027 school year: each month the state board
+              will also recognize one standout Rhode Island chapter for its
+              activities, service, and member engagement. Chapter ambassadors
+              can submit what their chapter has been up to, and the honoree is
+              featured on our social platforms and this site.
+            </p>
+          </div>
         </div>
       </section>
 

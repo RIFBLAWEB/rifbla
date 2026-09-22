@@ -81,3 +81,28 @@ content:
       - name: order
         label: Display order (alphabetical position)
         type: number
+
+  - name: updates
+    label: Chapter Updates
+    type: collection
+    path: content/updates
+    format: json
+    view:
+      fields: [chapter, date, title]
+      sort: [date]
+    fields:
+      - name: chapter
+        label: Chapter (school name)
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: title
+        label: Headline
+        type: string
+        required: true
+      - name: body
+        label: What happened (a sentence or two)
+        type: text

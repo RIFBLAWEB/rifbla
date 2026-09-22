@@ -18,14 +18,18 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
     <>
       <header className="site-header">
         <div className="container header-inner">
-          <Link href="/" className="wordmark wordmark-logo">
+          <Link href="/" className="wordmark wordmark-ri">
             <Image
-              src="/photos/rifbla-logo.png"
-              alt="Rhode Island FBLA"
-              width={196}
-              height={49}
+              src="/photos/fbla-mark.png"
+              alt=""
+              width={42}
+              height={40}
               priority
             />
+            <span className="wordmark-stack">
+              <span className="wordmark-eg">Rhode Island</span>
+              <span className="wordmark-fbla">FBLA</span>
+            </span>
           </Link>
           <nav aria-label="Main">
             {nav.map((item) => (

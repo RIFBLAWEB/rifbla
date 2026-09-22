@@ -1441,3 +1441,70 @@ a.roster-name:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ---------- RI wordmark lockup (triangle + stacked text) ---------- */
+
+.wordmark-ri {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.wordmark-ri img {
+  display: block;
+}
+
+.wordmark-stack {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+/* ---------- chapter updates feed ---------- */
+
+.update-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 46rem;
+}
+
+.update-list li {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0;
+}
+
+.update-list li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.update-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 0.3rem;
+}
+
+.update-chapter {
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  color: var(--blue);
+}
+
+.update-date {
+  color: var(--gray);
+  font-size: 0.85rem;
+}
+
+.update-title {
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.update-body {
+  color: var(--gray);
+  margin: 0;
+}

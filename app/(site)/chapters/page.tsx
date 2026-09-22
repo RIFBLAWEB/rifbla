@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import state from "@/content/state.json";
 import { getChapters } from "@/lib/reader";
 
@@ -37,6 +38,11 @@ export default async function Chapters() {
               </li>
             ))}
           </ul>
+          <p style={{ marginTop: "2rem" }}>
+            <Link href="/updates" className="btn">
+              See what chapters are up to →
+            </Link>
+          </p>
         </div>
       </section>
 

@@ -26,23 +26,8 @@ export default async function Officers() {
         <div className="container">
           <span className="kicker">{officers.year}</span>
           <h2>The officer team</h2>
-          <div className="officer-grid officer-grid-featured">
-            {team.slice(0, 2).map((o) => (
-              <div className="officer-card" key={o.name}>
-                <div className="officer-photo">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={`/photos/${o.photo}`} alt={o.name} />
-                </div>
-                <h3>{o.name}</h3>
-                <p className="officer-meta">
-                  {o.role} · {o.school}
-                </p>
-                <p className="officer-bio">{o.bio}</p>
-              </div>
-            ))}
-          </div>
           <div className="officer-grid">
-            {team.slice(2).map((o) => (
+            {team.map((o) => (
               <div className="officer-card" key={o.name}>
                 <div className="officer-photo">
                   {/* eslint-disable-next-line @next/next/no-img-element */}

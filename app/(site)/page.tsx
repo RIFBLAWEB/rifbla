@@ -3,30 +3,17 @@ import state from "@/content/state.json";
 import Anchor from "@/components/Anchor";
 import Slideshow from "@/components/Slideshow";
 import slcAwards from "@/public/photos/slc-awards.jpg";
-import nlcDelegation from "@/public/photos/nlc-delegation.jpg";
-import nlcChampion from "@/public/photos/nlc-champion.jpg";
 import nlcAwards from "@/public/photos/nlc-awards.jpg";
 import nlcSession from "@/public/photos/nlc-session.jpg";
-import nlcHats from "@/public/photos/nlc-hats.jpg";
 import nlcBannerGroup from "@/public/photos/nlc-banner-group.jpg";
 import nlcSteps from "@/public/photos/nlc-steps.jpg";
 import { getEvents, getChapters } from "@/lib/reader";
 
 const slides = [
   {
-    image: nlcDelegation,
-    alt: "The full Rhode Island delegation under the National Leadership Conference welcome banner",
-    caption: "The Rhode Island delegation at the National Leadership Conference",
-  },
-  {
     image: slcAwards,
     alt: "Members shaking hands on stage during the awards session at the State Leadership Conference",
     caption: "Awards session, 2026 State Leadership Conference",
-  },
-  {
-    image: nlcChampion,
-    alt: "Members holding the FBLA Silver Champion Chapter banner",
-    caption: "Silver Champion Chapter honors at nationals",
   },
   {
     image: nlcAwards,
@@ -37,11 +24,6 @@ const slides = [
     image: nlcSession,
     alt: "Rhode Island members gathered at a National Leadership Conference session",
     caption: "RI members at an NLC general session",
-  },
-  {
-    image: nlcHats,
-    alt: "Members in suits and cowboy hats outside the National Leadership Conference venue",
-    caption: "Suits and cowboy hats at nationals",
   },
   {
     image: nlcBannerGroup,
