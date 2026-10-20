@@ -34,6 +34,9 @@ content:
       - name: linkLabel
         label: Link text (optional, e.g. "Register here")
         type: string
+      - name: national
+        label: National event (shows a tag, hidden from the homepage)
+        type: boolean
       - name: order
         label: Display order (1 = first)
         type: number

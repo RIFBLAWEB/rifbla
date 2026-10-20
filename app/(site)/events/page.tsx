@@ -25,12 +25,23 @@ export default async function Events() {
       <section className="section">
         <div className="container">
           <span className="kicker">2026-2027</span>
-          <h2>This year&apos;s calendar</h2>
+          <h2>The full FBLA year</h2>
+          <p className="prose">
+            Rhode Island events and key national dates, in one place. The
+            complete national schedule is in the{" "}
+            <a href="/docs/fbla-schedule-2026-27.pdf">
+              FBLA Schedule at a Glance (PDF)
+            </a>
+            .
+          </p>
           <ul className="timeline">
             {events.map((event) => (
               <li key={event.title}>
                 <span className="timeline-date">{event.date}</span>
-                <p className="timeline-title">{event.title}</p>
+                <p className="timeline-title">
+                  {event.title}
+                  {event.national && <span className="event-tag">National</span>}
+                </p>
                 <p className="event-detail">{event.detail}</p>
                 {event.link && (
                   <p className="event-detail">

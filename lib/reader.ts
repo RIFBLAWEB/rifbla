@@ -33,6 +33,7 @@ export type StateEvent = {
   detail: string;
   link?: string;
   linkLabel?: string;
+  national?: boolean;
   order?: number;
 };
 

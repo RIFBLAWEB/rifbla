@@ -1508,3 +1508,20 @@ a.roster-name:hover {
   color: var(--gray);
   margin: 0;
 }
+
+/* ---------- national event tag ---------- */
+
+.event-tag {
+  display: inline-block;
+  font-family: var(--font-archivo), sans-serif;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 2px;
+  padding: 0.08rem 0.45rem;
+  margin-left: 0.6rem;
+  vertical-align: 0.15rem;
+}

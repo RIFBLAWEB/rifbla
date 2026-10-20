@@ -137,7 +137,7 @@ export default async function Home() {
           <span className="kicker">Calendar</span>
           <h2>This year in RI FBLA</h2>
           <ul className="event-list">
-            {events.map((event) => (
+            {events.filter((e) => !e.national).map((event) => (
               <li key={event.title}>
                 <span className="event-date">{event.date}</span>
                 <div>
