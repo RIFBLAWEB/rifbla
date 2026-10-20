@@ -13,6 +13,7 @@ content:
     type: collection
     path: content/events
     format: json
+    extension: json
     view:
       fields: [title, date]
     fields:
@@ -42,6 +43,7 @@ content:
     type: collection
     path: content/officers
     format: json
+    extension: json
     view:
       fields: [name, role, school]
     fields:
@@ -71,6 +73,7 @@ content:
     type: collection
     path: content/chapters
     format: json
+    extension: json
     view:
       fields: [name]
     fields:
@@ -93,6 +96,7 @@ content:
     type: collection
     path: content/updates
     format: json
+    extension: json
     view:
       fields: [chapter, date, title]
       sort: [date]
