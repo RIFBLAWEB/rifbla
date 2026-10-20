@@ -112,3 +112,88 @@ content:
       - name: body
         label: What happened (a sentence or two)
         type: text
+
+  - name: officers
+    label: Officer Team (bios & history)
+    type: file
+    path: content/officers.json
+    format: json
+    fields:
+      - name: year
+        label: School year (e.g. 2026-2027)
+        type: string
+      - name: current
+        label: Current officer team
+        type: object
+        list: true
+        fields:
+          - { name: role, label: Role, type: string }
+          - { name: name, label: Name, type: string }
+          - { name: school, label: School, type: string }
+          - { name: photo, label: Photo, type: image }
+          - { name: bio, label: Bio, type: text }
+      - name: past
+        label: Past officer teams
+        type: object
+        list: true
+        fields:
+          - { name: year, label: School year, type: string }
+          - name: members
+            label: Members (one per line, "Name | Role")
+            type: string
+            list: true
+
+  - name: state
+    label: State Info (advisers, contact, awards)
+    type: file
+    path: content/state.json
+    format: json
+    fields:
+      - name: org
+        label: Organization name
+        type: string
+      - name: contact
+        label: Contact & social links
+        type: object
+        fields:
+          - { name: email, label: Email, type: string }
+          - { name: instagram, label: Instagram URL, type: string }
+          - { name: instagramHandle, label: Instagram handle, type: string }
+          - { name: linkedin, label: LinkedIn URL, type: string }
+          - { name: linkedinLabel, label: LinkedIn label, type: string }
+      - name: leadership
+        label: State adviser & chair
+        type: object
+        list: true
+        fields:
+          - { name: role, label: Role, type: string }
+          - { name: name, label: Name, type: string }
+          - { name: school, label: School, type: string }
+          - { name: email, label: Email, type: string }
+          - { name: phone, label: Phone, type: string }
+          - { name: photo, label: Photo (optional), type: image }
+      - name: photoSubmissionForm
+        label: Chapter photo submission form URL
+        type: string
+      - name: championChapter
+        label: Champion Chapter
+        type: object
+        fields:
+          - { name: posterPdf, label: "Poster PDF filename (in public/docs)", type: string }
+          - name: recognized
+            label: Recognized chapters
+            type: object
+            fields:
+              - { name: title, label: "Recognition period (e.g. Summer Starter 2025-26)", type: string }
+              - name: rankings
+                label: Rankings (best first)
+                type: string
+                list: true
+      - name: stateBoard
+        label: State board applications
+        type: object
+        fields:
+          - { name: status, label: Current status message, type: text }
+          - { name: advisorContact, label: Adviser contact email, type: string }
+          - { name: handbookPdf, label: "Handbook PDF filename (in public/docs)", type: string }
+          - { name: specialElectionGuidelines, label: Special election guidelines URL, type: string }

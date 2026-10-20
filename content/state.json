@@ -24,42 +24,6 @@
       "phone": "(401) 247-3150"
     }
   ],
-  "events": [
-    {
-      "date": "October 30, 2026",
-      "title": "State Fall Leadership Conference",
-      "photo": "image.png",
-      "detail": "SFLC is the first statewide event of the year. It brings together local chapters from all across the state for a day of workshops, networking, lunch, and speakers."
-    },
-    {
-      "date": "February 10, 2027",
-      "title": "State Leadership Breakfast",
-      "photo": "screen-shot-2026-03-01-at-4-41-22-pm.png",
-      "detail": "The breakfast is a special opportunity for local leaders. It is a morning specifically designed to give chapter leaders additional training, resources, and support."
-    },
-    {
-      "date": "March 12, 2027",
-      "title": "State Leadership Conference",
-      "photo": "d91a0061.jpg",
-      "detail": "SLC is the biggest event of every year. This day is not only about competitive events, but also state leadership elections and workshops."
-    }
-  ],
-  "chapters": [
-    { "name": "Barrington Christian Academy", "note": "HS & MS" },
-    { "name": "Barrington High School" },
-    { "name": "Chariho High School" },
-    { "name": "Cranston West High School" },
-    { "name": "Dr. Jorge Alvarez High School" },
-    { "name": "East Greenwich High School", "site": "https://eg-fbla.vercel.app" },
-    { "name": "La Salle Academy" },
-    { "name": "Lincoln High School" },
-    { "name": "Pilgrim High School" },
-    { "name": "Portsmouth High School" },
-    { "name": "Smithfield High School" },
-    { "name": "St. Raphael Academy" },
-    { "name": "Wheeler School" },
-    { "name": "Woonsocket High School" }
-  ],
   "photoSubmissionForm": "https://docs.google.com/forms/d/e/1FAIpQLSfNf5y5e5_v4cFgS4TT2rq_zf7Ev8B-22jEb7JXMDu5LZjOqA/viewform",
   "championChapter": {
     "posterPdf": "fbla_2026-2027_hs-championchapter_poster_18x24_v4-2.pdf",
